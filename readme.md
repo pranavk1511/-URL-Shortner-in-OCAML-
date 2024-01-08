@@ -61,6 +61,19 @@ The server will start on http://127.0.0.1:3000.
 - Opium: [https://opam.ocaml.org/packages/opium/](https://opam.ocaml.org/packages/opium/)
 - Lwt: [https://opam.ocaml.org/packages/lwt/](https://opam.ocaml.org/packages/lwt/)
 
+## Docker Usage
+
+### Build Docker Image
+
+```bash
+docker build -t opium-url-shortener .
+```
+This command builds a Docker image named opium-url-shortener using the provided Dockerfile.
+ 
+### Run Docker Container
+```bash
+docker run -p 3000:3000 opium-url-shortener
+```
 ## License
 
 This project is licensed under the MIT License.
